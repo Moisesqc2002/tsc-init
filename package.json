@@ -1,0 +1,21 @@
+{
+  "name": "lead-gen",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "dev": "tsc && nodemon --exec ts-node src/index.ts",
+    "dev:watch": "nodemon --exec ts-node src/index.ts",
+    "dev:build": "nodemon --watch src --ext ts --exec \"tsc && node dist/index.js\""
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^24.0.7",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  }
+}
